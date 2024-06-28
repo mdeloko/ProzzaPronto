@@ -1,0 +1,177 @@
+:root{
+    font-size: 16px;
+    --bg:rgb(235,211,179);
+    --bg-friendList:rgb(243,226,204);
+    --bg-textBox:white;
+    --base-color1:rgb(223, 173, 108);
+    --base-color2:darkorange;
+    --btn-textColor1:white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    background-color: var(--bg);
+    overflow: hidden;
+}
+li{
+    cursor: pointer;
+}
+#appTitle{
+    display: flex;
+    justify-content: center;
+    margin: 0.5dvh 3.4dvw;
+}
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 0 20dvw;
+    gap:1dvh
+}
+.loginInput{
+    min-height: 3.5dvh;
+    min-width: 15dvw;
+    padding: 0 0.8dvw 0 1.2dvw;
+    border: none;
+    border-radius: 2dvw;
+    outline: none;
+}
+.loginBtn{
+    font-weight: bold;
+    margin: 0 7dvw;
+    border: none;
+    border-radius: 2dvw;
+    min-height: 3.5dvh;
+    min-width: 15dvw;
+    background-color: var(--base-color1);
+    color: var(--btn-textColor1);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.loginBtn:hover{
+    background-color: var(--base-color2);
+}
+
+.flexInline{
+    display: flex;
+    flex-direction: row;
+}
+#friendListContainer{
+    margin:0 0 0 2vw;
+    background-color: var(--bg-friendList);
+    display: flex;
+    flex-direction: column;
+    min-width: 20vw;
+    min-height:90vh;
+    border-radius:20px; 
+}
+
+#friendListTitle{
+    margin: 0.8vh 0 0 1.5vw;
+    
+}
+#textBoxContainer{
+    border-radius: 20px 20px 0 0;
+    margin-left: 0.8vw;
+    background-color: var(--bg-textBox);
+    min-width: 75.2dvw;
+    max-width: 75.2dvw;
+    max-height: 86dvh;
+}
+#textBox{
+    box-sizing: border-box;
+    /*background-color: rgba(0, 255, 255, 0.1);*/
+    min-height: 100%;
+    min-width: 100%;
+    padding: 1vh 1.5vw;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* allow scrolling */
+    scrollbar-width: none; /* hide scrollbar in Firefox */
+    -ms-overflow-style: none; /* hide scrollbar in IE and Edge */
+}
+#textBox::-webkit-scrollbar{
+    display: none;
+}
+#textEnterContainer{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    /*background-color: rgba(150, 150, 150, 1);*/
+    min-height: 4vh;
+    flex-grow:1;
+}
+#msgText{
+    min-height: 4vh;
+    /* min-width: 67vw; */
+    padding: 0 1vw 0 1vw;
+    border: 0px;
+    border-top: 1px solid rgba(150,150,150,0.5);
+    border-radius: 0 0 0 10px;
+    flex-grow: 1;
+}
+#sendMsg{
+    color:var(--btn-textColor1);
+    background-color: var(--base-color1);
+    border: none;
+    border-radius: 0 0 10px 0;
+    min-height: 4vh;
+    min-width: 7vw;
+    transition: background-color 0.2s, transform 0.1s;
+}
+#sendMsg:hover{
+    background-color: var(--base-color2);
+}
+#sendMsg:active{
+    transform: scale(0.98);
+}
+.msgReceivedContainer{
+    align-self: flex-start;
+    margin-bottom:1vh;
+    color: white;
+    background-color: rgb(223, 173, 108);
+    padding: 0.4vh 3vw 0.4vh 1vw;
+    border-radius: 0 15px 15px 10px;
+    width: fit-content;
+    max-width: 55%;
+}
+.msgSentContainer{
+    align-self: flex-end;
+    margin-bottom: 1vh;
+    color: white;
+    background-color: rgb(243, 201, 147);
+    padding: 0.8vh 3vw 0.4vh 1vw;
+    border-radius: 15px 15px 0px 10px;
+    width: fit-content;
+    max-width: 55%;
+}
+.msgSender{
+    font-size: larger;
+    font-weight: bold;
+}
+.msgContent{
+    text-align: justify;
+}
+.msgTime{
+    font-size: small;
+    text-align: end;
+}
+.hidden{
+    display: none;
+}
+
+footer{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 1vh 0 0 0;
+    position: sticky;
+    top:96.4%;
+}

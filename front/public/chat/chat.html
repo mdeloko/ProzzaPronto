@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prozza: Chat</title>
+    <link rel="stylesheet" href="friendList.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="module" src="./chat.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="appTitle">Prozza</h1>
+    </header>
+    <div class="flexInline">
+        <div id="friendListContainer">
+            <h3 id="friendListTitle">Amigos</h3>
+            <div id="friendList">
+                <ol>
+                </ol>
+                <div id="funcs">
+                    <button id="addFriend" type="button"class="chatBtn">Adicionar Amigo</button>
+                    <button id="updateAcc" type="button" class="chatBtn">Atualizar Conta</button>
+                </div>
+            </div>
+        </div>
+        <div id="textBoxContainer">
+            <div id="textBox">
+                <div class="msgReceivedContainer">
+                    <p class="msgSender">Equipe Prozza</p>
+                    <p class="msgContent">Seja bem-vindo ao Prozza! Espero que curta!</p>
+                    <p class="msgTime">Hora de conversar!</p>
+                </div>
+                
+            </div>
+            <form id="textEnterContainer">
+                <input type="text" id="msgText" placeholder="Mensagem..." required autocomplete="off">
+                <button type="submit"id="sendMsg">Enviar</button>
+            </form>    
+        </div>  
+    </div>
+    <footer>
+        <p>Feito por Erik e Werickson - 2024.</p>
+    </footer>
+</body>
+</html>

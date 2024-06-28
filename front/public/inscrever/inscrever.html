@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscreva-se no Prozza!</title>
+    <script src="./inscrever.js" type="module" defer></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1 id="appTitle">Prozza</h1>
+    </header>
+    <form id="createAccountForm" class="loginForm">
+        <input type="text" class="loginInput" id="completeNameInput" placeholder="Nome Completo" required>
+        <input type="text" class="loginInput" id="emailInput" placeholder="E-mail" required>
+        <input type="text" class="loginInput" id="userInput" placeholder="Usuário" required autocomplete="off">
+        <input type="text" class="loginInput" id="telephoneInput" placeholder="Telefone" required>
+        <input type="password" class="loginInput" id="passwdInput" placeholder="Senha" required autocomplete="off">
+        <input type="text" class="loginInput" id="zipInput" placeholder="CEP" required>
+        <input type="text" class="loginInput" id="streetInput" placeholder="Rua/Avenida" required>
+        <input type="text" class="loginInput" id="numberInput" placeholder="Número" required>
+        <input type="text" class="loginInput" id="complementInput" placeholder="Complemento" required autocomplete="off">
+        
+        <button type="submit"class="loginBtn" id="createAccountBtn">Criar Conta!</button>
+        <button type="button" class="loginBtn" id="alreadyHaveAccountBtn" >Já<br>tenho conta...</button>
+    </form>
+    <footer>
+        <p>Feito por Erik e Werickson - 2024.</p>
+    </footer>
+</body>
+</html>
